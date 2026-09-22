@@ -1,0 +1,33 @@
+CloudWatch evidence — tool invocations by the deployed agent
+Log group: /aws/bedrock-agentcore/runtimes/CustomerSupportAgent-nQ2bdKAEfL-DEFAULT
+Account 905473793005, us-east-1
+
+Rubric 'Integrate external tools using MCP' requires successful invocations of at least two
+distinct Gateway-backed tools, one API-based target and one Lambda-based target:
+
+  order-tracker___get_order         <- API Gateway target (REST API 'customer-support-api')
+  order-tracker___get_customer      <- API Gateway target
+  refund-processor___initiate_refund <- Lambda target ('refund-processor', static lambda_schema)
+
+Tool prefixes are 'targetName___toolName', assigned by the AgentCore Gateway.
+
+Local (non-Gateway) tools also exercised:
+  search_knowledge_base       <- Bedrock Knowledge Base Retrieve (RAG)
+  calculate_loyalty_discount  <- AgentCore Code Interpreter sandbox
+  browser                     <- AgentCore Browser
+
+========================================================================
+Raw log lines, chronological:
+
+2026-09-22T00:08:54.626000+00:00  Tool #1: order-tracker___get_order
+2026-09-22T00:12:40.778000+00:00  Tool #1: order-tracker___get_order
+2026-09-22T00:14:43.660000+00:00  Tool #1: order-tracker___get_order
+2026-09-22T00:15:57.369000+00:00  Tool #1: order-tracker___get_customer
+2026-09-22T00:16:48.471000+00:00  Tool #1: order-tracker___get_order
+2026-09-22T00:16:49.591000+00:00  Tool #2: refund-processor___initiate_refund
+2026-09-22T00:17:09.577000+00:00  Tool #1: search_knowledge_base
+2026-09-22T00:17:45.172000+00:00  Tool #1: calculate_loyalty_discount
+2026-09-22T00:18:19.449000+00:00  Tool #1: browser
+2026-09-22T00:18:20.680000+00:00  Tool #2: browser
+2026-09-22T00:18:24.525000+00:00  Tool #3: browser
+2026-09-22T00:19:02.434000+00:00  Tool #4: browser

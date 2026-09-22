@@ -1,0 +1,23 @@
+
+⚠️ Recommendation: The Starter Toolkit CLI is no longer supported.
+   Please use the AgentCore CLI (@aws/agentcore) to create, develop, and deploy agents on Amazon Bedrock AgentCore.
+   New Bedrock AgentCore features are only accessible in the AgentCore CLI.
+
+   To uninstall this starter toolkit, run: pip uninstall bedrock-agentcore-starter-toolkit
+   To install the AgentCore CLI: npm install -g @aws/agentcore
+   To import existing agents, run: agentcore import
+   Set AGENTCORE_SUPPRESS_RECOMMENDATION=1 to silence this warning.
+
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── CustomerSupportAgent ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Session: c9297c6b-a84a-410a-b52c-b3122c51de36                                                                                                                                                                                                                               │
+│ Request ID: e3794984-fec5-4108-8e0e-5e051a946cab                                                                                                                                                                                                                            │
+│ ARN: arn:aws:bedrock-agentcore:us-east-1:905473793005:runtime/CustomerSupportAgent-nQ2bdKAEfL                                                                                                                                                                               │
+│ Logs: aws logs tail /aws/bedrock-agentcore/runtimes/CustomerSupportAgent-nQ2bdKAEfL-DEFAULT --log-stream-name-prefix "2026/09/22/[runtime-logs" --follow                                                                                                                    │
+│       aws logs tail /aws/bedrock-agentcore/runtimes/CustomerSupportAgent-nQ2bdKAEfL-DEFAULT --log-stream-name-prefix "2026/09/22/[runtime-logs" --since 1h                                                                                                                  │
+│ GenAI Dashboard: https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-observability/agent-core                                                                                                                                                            │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Response:
+Your refund for the Kindle Paperwhite (Order #ORD-002) has been approved. A credit of $139.99 will appear in your account within 3-5 business days.
+
+A refund ID (REF-BL1EPT5V) has been created for your records. If you have any questions about this refund, please let us know.

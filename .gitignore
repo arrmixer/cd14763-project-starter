@@ -11,6 +11,11 @@ __pycache__/
 Dockerfile
 .dockerignore
 
+# Build cache written by `agentcore launch`. dependencies.zip is ~102 MB, which
+# exceeds GitHub's hard 100 MB per-file limit and will reject the push outright.
+# Regenerated on every launch; never part of the submission.
+.bedrock_agentcore/
+
 # Credentials — never commit. The AgentCore CLI reads key values from the
 # environment and pushes them to AgentCore Identity on deploy.
 .env
@@ -20,6 +25,10 @@ Dockerfile
 # Working notes: contains computed test answers, local machine paths, and a
 # step map of the project. Public repo + graded coursework = keep this local.
 PROJECT_NOTES.md
+
+# Editor config — pins AWS_PROFILE=default for integrated terminals and points
+# Pylance at starter/.venv. Machine-specific; not part of the submission.
+.vscode/
 
 # Local test scratch
 /tmp/

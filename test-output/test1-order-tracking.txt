@@ -1,0 +1,32 @@
+
+⚠️ Recommendation: The Starter Toolkit CLI is no longer supported.
+   Please use the AgentCore CLI (@aws/agentcore) to create, develop, and deploy agents on Amazon Bedrock AgentCore.
+   New Bedrock AgentCore features are only accessible in the AgentCore CLI.
+
+   To uninstall this starter toolkit, run: pip uninstall bedrock-agentcore-starter-toolkit
+   To install the AgentCore CLI: npm install -g @aws/agentcore
+   To import existing agents, run: agentcore import
+   Set AGENTCORE_SUPPRESS_RECOMMENDATION=1 to silence this warning.
+
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── CustomerSupportAgent ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Session: c9297c6b-a84a-410a-b52c-b3122c51de36                                                                                                                                                                                                                               │
+│ Request ID: 1c8062f4-d734-4d06-ba56-23b5cc2a75b0                                                                                                                                                                                                                            │
+│ ARN: arn:aws:bedrock-agentcore:us-east-1:905473793005:runtime/CustomerSupportAgent-nQ2bdKAEfL                                                                                                                                                                               │
+│ Logs: aws logs tail /aws/bedrock-agentcore/runtimes/CustomerSupportAgent-nQ2bdKAEfL-DEFAULT --log-stream-name-prefix "2026/09/22/[runtime-logs" --follow                                                                                                                    │
+│       aws logs tail /aws/bedrock-agentcore/runtimes/CustomerSupportAgent-nQ2bdKAEfL-DEFAULT --log-stream-name-prefix "2026/09/22/[runtime-logs" --since 1h                                                                                                                  │
+│ GenAI Dashboard: https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-observability/agent-core                                                                                                                                                            │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Response:
+Your order **ORD-001** has been shipped! Here are the details:
+
+**Order Status:** SHIPPED  
+**Items:**  
+- Wireless Headphones Pro (1 unit at $89.99)  
+
+**Total:** $89.99  
+**Carrier:** UPS  
+**Tracking Number:** TRK987654321  
+**Estimated Delivery Date:** September 24, 2026  
+
+You can use the tracking number with UPS to monitor its progress. Let me know if you need anything else!
